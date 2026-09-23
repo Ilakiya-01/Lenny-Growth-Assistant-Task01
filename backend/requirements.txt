@@ -1,0 +1,22 @@
+# Runtime dependencies for the FastAPI backend.
+# Versions are pinned to the versions used during verification.
+fastapi==0.141.1
+uvicorn[standard]==0.53.0
+sqlalchemy==2.0.54
+psycopg2-binary==2.9.13
+alembic==1.20.0
+pydantic-settings==2.15.0
+
+# Knowledge base (Phase 2): transcript parsing, chunking and embeddings.
+PyYAML==6.0.3
+pgvector==0.5.0
+sentence-transformers==6.1.0
+# Alternative cloud embedding provider (EMBEDDING_PROVIDER=openai).
+openai==3.17.0
+tiktoken==0.14.0
+
+# Application agent and LLM providers (Phase 3).
+# The Anthropic SDK provides the cloud provider; the Claude Agent SDK is the
+# approved application-agent runtime for cloud mode.
+anthropic==1.7.0
+claude-agent-sdk==0.2.157

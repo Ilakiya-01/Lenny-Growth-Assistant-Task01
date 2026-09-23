@@ -1,0 +1,7 @@
+# Development and test dependencies.
+-r requirements.txt
+pytest==9.1.1
+httpx==0.28.1
+# Pinned because the Anthropic provider tests mock this transport: the
+# ``anthropic`` SDK uses httpx2 internally, not httpx.
+httpx2==2.13.0
