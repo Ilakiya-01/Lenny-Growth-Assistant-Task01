@@ -43,3 +43,6 @@ Thumbs.db
 *.log
 .idea/
 .vscode/
+
+
+.env
